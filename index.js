@@ -1,7 +1,7 @@
 /**
- * @author Tim Allen
+ * @author Tim Allen // Thanks to Titus Woormer
  * @license MIT
- * @fileoverview Split paragraphs according to customer regex.
+ * @fileoverview Split paragraphs even if blank line has \t or ' ' on it.
  */
 
 'use strict';
@@ -9,7 +9,6 @@
 /* Dependencies. */
 var nlcstToString = require('nlcst-to-string');
 var modifyChildren = require('unist-util-modify-children');
-var visit = require('unist-util-visit');
 var EXPRESSION_MULTI_NEW_LINE_WS = /^(\r?\n|\r\w?){2,}$/
 
 /* Expose. */
