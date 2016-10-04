@@ -1,6 +1,6 @@
 {
   "name": "split-paragraphs-permissively",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows a line containing only spaces or tabs to split a paragraph.",
   "keywords": ["retext", "unist"],
   "repository": "github.com/noblesamurai/split-paragraphs-permissively",
