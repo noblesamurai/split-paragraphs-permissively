@@ -9,7 +9,7 @@
 /* Dependencies. */
 var nlcstToString = require('nlcst-to-string');
 var modifyChildren = require('unist-util-modify-children');
-var EXPRESSION_MULTI_NEWLINE_WS = /^[ \t]?(\r?\n[ \t]?){2,}?$/
+var EXPRESSION_MULTI_NEWLINE_WS = /^[ \t]*(\r?\n[ \t]*){2,}?$/
 
 /* Expose. */
 module.exports = modifyChildren(breakParagraphs);
