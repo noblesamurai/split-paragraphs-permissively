@@ -1,0 +1,24 @@
+{
+  "name": "split-paragraphs-permissively",
+  "version": "1.0.0",
+  "description": "Allows a line containing only spaces or tabs to split a paragraph.",
+  "keywords": ["retext", "unist"],
+  "repository": "github.com/noblesamurai/split-paragraphs-permissively",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nlcst-to-string": "^2.0.0",
+    "unist-util-modify-children": "^1.0.0",
+    "unist-util-visit": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0",
+    "parse-english": "^3.0.0",
+    "unist-util-inspect": "^4.0.0"
+  }
+}
