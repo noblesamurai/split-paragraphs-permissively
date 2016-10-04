@@ -9,7 +9,7 @@
 /* Dependencies. */
 var nlcstToString = require('nlcst-to-string');
 var modifyChildren = require('unist-util-modify-children');
-var EXPRESSION_MULTI_NEW_LINE_WS = /^(\r?\n|\r\w?){2,}$/
+var EXPRESSION_MULTI_NEWLINE_WS = /^[ \t]?(\r?\n[ \t]?){2,}?$/
 
 /* Expose. */
 module.exports = modifyChildren(breakParagraphs);
@@ -47,7 +47,7 @@ function breakParagraphs(child, index, parent) {
 
     if (
       node.type !== 'WhiteSpaceNode' ||
-      !/^(\r?\n\s?|\r\s?){2,}$/.test(nlcstToString(node))
+      !EXPRESSION_MULTI_NEWLINE_WS.test(nlcstToString(node))
     ) {
       continue;
     }
